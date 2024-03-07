@@ -13,7 +13,7 @@ public class TestListExamples {
     @Test(timeout = 500)
     public void testFilterEmptyList() {
         List<String> empty = Arrays.asList();
-        List<String> filtered = ListExamples.filter(emptyList, new IsMoon());
+        List<String> filtered = ListExamples.filter(empty, new IsMoon());
         assertTrue(filtered.isEmpty());
     }
 
